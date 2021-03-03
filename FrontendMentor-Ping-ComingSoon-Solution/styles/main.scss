@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Franklin", sans-serif;
+    letter-spacing: 0.1rem;
+}
+.container{
+    margin: 3rem auto;
+    @media(max: width 767px){
+        width: 90%;
+    }
+}
+
+@import 'variables';
+@import 'header';
+@import 'hero';
+@import 'footer';
