@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'header';
+@import 'hero';
+@import 'footer';
+
+body{
+    background: url('../images/bg-desktop.svg'),var(--Violet);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--White);
+    font-family: var(--Body);
+    @media(max-width:767px){
+        background: url('../images/bg-mobile.svg'),var(--Violet);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 2rem 0rem;
+}

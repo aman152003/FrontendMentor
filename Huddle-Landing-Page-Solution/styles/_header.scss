@@ -1,0 +1,11 @@
+.header{
+    width: 85%;
+    min-height: 20vh;
+    margin: 0 auto;
+    @media(max-width:1000px){
+        width: 90%;
+    }
+    svg{
+        width: 12rem;
+    }
+}
