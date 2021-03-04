@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'header';
+@import 'features';
+@import 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    padding: 2rem 0rem;
+}
+p{
+    line-height: 150%;
+    letter-spacing: 0.05rem;
+}
+h1,h4{
+    letter-spacing: 0.1rem;
+}

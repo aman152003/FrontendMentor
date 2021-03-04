@@ -1,0 +1,235 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Gray: gray;
+}
+
+.header {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 20vh;
+  max-width: 600px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    width: 95%;
+  }
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+.header .normal {
+  font-weight: 300;
+  color: var(--Gray);
+}
+
+.header .bold {
+  color: var(--Very-Dark-Blue);
+}
+
+.header p {
+  color: var(--Gray);
+  margin-top: 1rem;
+}
+
+@media (max-width: 450px) {
+  .header p {
+    font-size: 0.8rem;
+  }
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 70vh;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .features .two-features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.features .feature {
+  width: 320px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .features .feature {
+    width: 400px;
+    margin: 1.5rem 0 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .features .feature {
+    width: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .features .feature {
+    width: 85%;
+    padding: 1rem;
+  }
+}
+
+.features .feature h4 {
+  color: var(--Very-Dark-Blue);
+  font-size: 1.2rem;
+}
+
+.features .feature P {
+  color: var(--Gray);
+}
+
+@media (max-width: 450px) {
+  .features .feature P {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+  }
+}
+
+.features .feature .feature-img {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 450px) {
+  .features .feature .feature-img svg {
+    width: 2.5rem;
+  }
+}
+
+.features .cyan {
+  border-top: 5px solid var(--Cyan);
+}
+
+.features .red {
+  border-top: 5px solid var(--Red);
+}
+
+.features .orange {
+  border-top: 5px solid var(--Orange);
+}
+
+.features .blue {
+  border-top: 5px solid var(--Blue);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 10vh;
+  margin-top: 2rem;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  padding: 2rem 0rem;
+}
+
+p {
+  line-height: 150%;
+  letter-spacing: 0.05rem;
+}
+
+h1, h4 {
+  letter-spacing: 0.1rem;
+}
+/*# sourceMappingURL=main.css.map */
