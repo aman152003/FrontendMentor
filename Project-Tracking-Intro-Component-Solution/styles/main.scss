@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'nav';
+@import 'hero';
+@import 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Heading);
+    letter-spacing: 0.1rem;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    padding: 2.5rem 0rem;
+    width: 85%;
+    max-width: 1400px;
+    overflow-x: hidden;
+    margin-left: auto;
+    @media(max-width: 991px){
+        width: 90%;
+    }
+    @media(max-width: 767px){
+        width: 96%;
+    }
+}
+

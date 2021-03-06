@@ -1,0 +1,104 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    @media(max-width: 767px){
+        flex-direction: column;    
+    }
+
+    .hero-content{
+        width: 50%;
+        max-width: 500px;
+        margin-right: auto;
+        @media(max-width: 767px){
+            width: 100%;
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 2.5rem;
+            padding-right: 1rem;
+        }
+
+        h1{
+            color: var(--Very-Dark-Blue);
+            font-size: 4rem;
+            margin-top: 1rem;
+            @media(max-width: 991px){
+                font-size: 3rem;
+            }
+            @media(max-width: 767px){
+                max-width: 400px;
+            }
+            @media(max-width: 500px){
+                font-size: 2.5rem;
+            }
+        }
+        h4{
+            color: var(--Dark-Grayish-Blue);
+            font-size: 1.5rem;
+            @media(max-width: 991px){
+                font-size: 1.4rem
+            }
+            @media(max-width: 500px){
+                font-size: 1.1rem;
+                line-height: 180%;
+            }
+
+            .bg-dark{
+                background-color: var(--Very-Dark-Blue);
+                color: var(--Light-Grayish-Blue);
+                padding: 0.4rem 1.2rem;
+                border-radius: 1.2rem;
+                margin-right: 1rem;
+            }
+        }
+        p{
+            color: var(--Gray);
+            font-family: var(--Body);
+            font-size: 1rem;
+            margin: 1rem 2.5rem 0rem 0rem;
+            line-height: 140%;
+            @media(max-width: 767px){
+                max-width: 400px;
+            }
+        }
+        button{
+            background-color: var(--Red);
+            border: none;
+            outline: none;
+            color: var(--Light-Grayish-Blue);
+            padding: 0.8rem 2.5rem;
+            font-size: 1rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+            &:hover{
+                opacity: 0.9;
+                cursor: pointer;
+            }
+            @media(max-width: 500px){
+                padding: 0.6rem 2rem;
+            }
+        }
+    }
+    .hero-image{
+        width: 50%;
+        @media(max-width: 767px){
+            width: 150%;
+            display: flex;
+            margin-left: auto;
+        }
+
+        svg{
+            width: 140%;
+            @media(max-width: 767px){
+                height: fit-content;
+                max-width: 500px;
+            }
+            @media(max-width: 500px){
+                width: 100%;
+            }
+        }
+    }
+}

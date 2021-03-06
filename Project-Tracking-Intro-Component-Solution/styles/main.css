@@ -1,0 +1,336 @@
+:root {
+  --Heading: 'Barlow Condensed', sans-serif;
+  --Body: 'Barlow', sans-serif;
+  --Very-Dark-Blue: hsl(230, 29%, 20%);
+  --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+  --Gray: gray;
+  --Light-Grayish-Blue: hsl(207, 33%, 95%);
+  --Red: hsl(0, 100%, 68%);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+@media (max-width: 991px) {
+  .nav {
+    width: 95%;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav .nav-links {
+    display: none;
+  }
+}
+
+.nav .nav-links .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.nav .nav-links .links li {
+  margin-right: 2rem;
+  border-bottom: 2px solid white;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.nav .nav-links .links li:hover {
+  border-bottom: 2px solid var(--Very-Dark-Blue);
+}
+
+.nav .nav-links .links li a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+.nav .nav-toggle {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .nav .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav .nav-toggled {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 12vh;
+  background-color: var(--Light-Grayish-Blue);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin-right: auto;
+  padding: 1.5rem 0rem;
+}
+
+.nav .nav-toggled .nav-toggled-links {
+  width: 70%;
+  list-style: none;
+  text-align: center;
+}
+
+.nav .nav-toggled .nav-toggled-links li {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.nav .nav-toggled .nav-toggled-links li:nth-child(4) {
+  margin-top: 1rem;
+  padding-top: .8rem;
+  margin-bottom: 0rem;
+  border-top: 1px solid var(--Dark-Grayish-Blue);
+}
+
+.nav .nav-toggled .nav-toggled-links li:nth-child(4) a {
+  color: var(--Dark-Grayish-Blue);
+}
+
+.nav .nav-toggled .nav-toggled-links a {
+  text-decoration: none;
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+}
+
+.nav .hide {
+  display: none;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.hero .hero-content {
+  width: 50%;
+  max-width: 500px;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .hero .hero-content {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 2.5rem;
+    padding-right: 1rem;
+  }
+}
+
+.hero .hero-content h1 {
+  color: var(--Very-Dark-Blue);
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 991px) {
+  .hero .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .hero-content h1 {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.hero .hero-content h4 {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .hero .hero-content h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero .hero-content h4 {
+    font-size: 1.1rem;
+    line-height: 180%;
+  }
+}
+
+.hero .hero-content h4 .bg-dark {
+  background-color: var(--Very-Dark-Blue);
+  color: var(--Light-Grayish-Blue);
+  padding: 0.4rem 1.2rem;
+  border-radius: 1.2rem;
+  margin-right: 1rem;
+}
+
+.hero .hero-content p {
+  color: var(--Gray);
+  font-family: var(--Body);
+  font-size: 1rem;
+  margin: 1rem 2.5rem 0rem 0rem;
+  line-height: 140%;
+}
+
+@media (max-width: 767px) {
+  .hero .hero-content p {
+    max-width: 400px;
+  }
+}
+
+.hero .hero-content button {
+  background-color: var(--Red);
+  border: none;
+  outline: none;
+  color: var(--Light-Grayish-Blue);
+  padding: 0.8rem 2.5rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+
+.hero .hero-content button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .hero .hero-content button {
+    padding: 0.6rem 2rem;
+  }
+}
+
+.hero .hero-image {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .hero .hero-image {
+    width: 150%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.hero .hero-image svg {
+  width: 140%;
+}
+
+@media (max-width: 767px) {
+  .hero .hero-image svg {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero .hero-image svg {
+    width: 100%;
+  }
+}
+
+.footer {
+  margin-top: 3rem;
+  padding-right: 1rem;
+}
+
+.footer p {
+  font-weight: 600;
+  line-height: 140%;
+  font-family: var(--Body);
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: var(--Heading);
+  letter-spacing: 0.1rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 2.5rem 0rem;
+  width: 85%;
+  max-width: 1400px;
+  overflow-x: hidden;
+  margin-left: auto;
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 96%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
