@@ -1,0 +1,43 @@
+.total-card{
+    padding: 2rem;
+    flex: 1;
+    margin: 1rem 1rem 0rem 0rem;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+
+    p{
+        font-weight: 700;
+        font-size: 0.85rem;
+    }
+    .social-handle{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        svg{
+            margin-right: 10px;
+        }
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .social-increase{
+        display: flex;
+        align-items: center;
+        margin-top: 1.5rem;
+        svg{
+            margin-right: 5px;
+        }
+        p{
+            color: var(--Lime-Green);
+        }
+    }
+}
