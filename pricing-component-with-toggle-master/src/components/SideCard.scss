@@ -1,0 +1,54 @@
+.sidecard{
+    text-align: center;
+    width: fit-content;
+    padding: 2rem;
+    width: 300px;
+    background: var(--Very-Light-Grayish-Blue);
+    border-radius: 5px;
+    color: var(--Dark-Grayish-Blue);
+    @media(max-width:991px){
+        width: 260px;
+    }
+    @media (max-width:767px){
+        width: 300px;
+    }
+    @media (max-width:375px){
+        width: 100%;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 3.5rem;
+        margin: 1.3rem 0rem 1.5rem 0rem;
+    }
+    .dollar{
+        font-size: 2rem;
+    }
+    p{
+        border-top: 1px solid var(--Grayish-Blue);
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        &:nth-of-type(3){
+            border-bottom: 1px solid var(--Grayish-Blue);
+        }
+    }
+    button{
+        width: 100%;
+        background: var(--Gradient);
+        color: var(--Very-Light-Grayish-Blue);
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 0.6rem 2.2rem;
+        margin-top: 2.5rem;
+        border: 1px solid transparent;
+        transition: 0.5s;
+        &:hover{
+            background: var(--Very-Light-Grayish-Blue);  
+            color: var(--Grayish-Blue);
+            border: 1px solid var(--Grayish-Blue);
+            cursor: pointer;
+        }
+    }
+}

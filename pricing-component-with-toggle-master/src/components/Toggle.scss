@@ -1,0 +1,27 @@
+.toggle-container{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    p{
+        color: var(--Light-Grayish-Blue);
+    }
+    .toggle{
+        cursor: pointer;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 3.5rem;
+        border-radius: 3.5rem;
+        height: 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: var(--Gradient);
+        .toggle-circle{
+            margin: 0rem 5px;
+            height: 20px;
+            width: 20px;
+            background-color: var(--Very-Light-Grayish-Blue);
+            border-radius: 50%;
+        }
+    }
+}

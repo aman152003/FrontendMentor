@@ -1,0 +1,55 @@
+.maincard{
+    width: 300px;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--Gradient);
+    color: var(--Very-Light-Grayish-Blue);
+    border-radius: 5px;
+    @media(max-width:991px){
+        width: 260px;
+    }
+    @media (max-width:767px){
+        width: 300px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    @media (max-width:375px){
+        width: 100%;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 3.5rem;
+        margin: 1.3rem 0rem 1.5rem 0rem;
+    }
+    .dollar{
+        font-size: 2rem;
+    }
+    p{
+        border-top: 1px solid var(--Very-Light-Grayish-Blue);
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        &:nth-of-type(3){
+            border-bottom: 1px solid var(--Very-Light-Grayish-Blue);
+        }
+    }
+    .btn-main{
+        width: 100%;
+        margin-top: 2.5rem;
+        border: none;
+        outline: none;
+        padding: 0.8rem 2.2rem;
+        border-radius: 5px;
+        background: var(--Very-Light-Grayish-Blue);  
+        color: var(--Grayish-Blue);
+        border: 1px solid transparent;
+        transition: 0.5s;
+        &:hover{
+            background: var(--Gradient);
+            color: var(--Very-Light-Grayish-Blue);
+            border: 1px solid var(--Very-Light-Grayish-Blue);
+            cursor: pointer;
+        }
+    }
+}
