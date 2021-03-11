@@ -1,0 +1,66 @@
+.shorten{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: var(--Dark-Violet);
+    border-radius: 7px;
+    margin-top: 5rem;
+    i{
+        font-size: 2rem;
+        color: var(--Cyan);
+        margin-left: 0.5rem;
+        cursor: pointer;
+    }
+    .input{
+        display: flex;
+        width: 75%;
+        @media (max-width: 1091px){
+            width: 68%;
+        }
+        input{
+            width: 100%;
+            padding: 0.6rem 1rem;
+            font-size: 1.1rem;
+            border-radius: 7px;
+            outline: none;
+            border: none;
+        } 
+        i{
+            display: none;
+        }   
+    }
+    .right{
+        display: flex;
+        .button{
+            margin-right: 0.5rem;
+        }
+    }
+    @media (max-width: 800px){
+        flex-direction: column;
+        i{
+            font-size: 1.4rem;
+        }
+        .input{
+            width: 100%;
+            align-items: center;
+            input{
+                font-size: 1rem;
+            }
+            i{
+                display: block;
+                margin-left: 1rem;
+            }
+        }
+        .right{
+            margin-top: 1.5rem;
+            .button{
+                margin-right: 0rem;
+            }
+            i{
+                display: none;
+            }
+        }
+    }
+}

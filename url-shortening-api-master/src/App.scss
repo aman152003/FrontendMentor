@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'Variables';
+
+/* Global Styles */
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+p{
+    letter-spacing: 140%;
+}
+
+/* xxx Global Styles xxx */
+
+.app{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.06rem;
+    overflow: hidden;
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    .container{
+        width: 85%;
+        margin: 2rem auto 0rem auto;
+        @media(max-width: 1200px){
+            width: 90%;
+        }
+        @media (max-width: 450px){
+            width: 93%;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.mobile-menu-container{
+    width: 100%;
+    position: absolute;
+    top: 12vh;
+    @media (min-width:801px){
+        display: none !important;
+    }
+    .mobile-menu{
+        background-color: var(--Dark-Violet);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        display: flex;
+        margin: 0 auto;
+        max-width: 450px;
+        .top{
+            text-align: center;
+        }
+        .bottom{
+            width: 90%;
+            padding-top: 1rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            border-top: 2px solid white;
+        }
+        a{
+            color: white;
+            &:hover{
+                color: var(--Grayish-Violet)
+            }
+        }
+        li{
+            margin-bottom: 1rem;
+            list-style: none;
+        }
+        @media(max-width: 800px){
+            width: 90%;
+        }
+    }
+}

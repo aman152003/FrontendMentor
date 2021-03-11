@@ -1,0 +1,61 @@
+.hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    @media(max-width: 1091px){
+        flex-direction: column;
+    }
+    &-left{
+        width: 45%;
+        max-width: 500px;
+        h1{
+            font-size: 3.5rem;
+            color: var(--Very-Dark-Violet);
+        }
+        p{
+            color: var(--Grayish-Violet);
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 1091px){
+            order: 2;
+            width: 70%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        @media (max-width: 800px){
+            width: 90%;
+            h1{
+                font-size: 3rem;
+            }
+        }
+        @media (max-width: 450px){
+            h1{
+                font-size: 2.2rem;
+            }
+        }
+    }
+    &-right{
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        svg{
+            width: 100%;
+            height: fit-content;
+        }
+        @media (max-width: 1091px){
+            order: 1;
+            width: 75%;
+            max-width: 600px;
+            justify-content: center;
+        }
+        @media (max-width: 800px){
+            width: 90%;
+        }
+        @media (max-width: 500px){
+            margin-top: 1.5rem;
+        }
+    }
+}

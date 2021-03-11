@@ -1,0 +1,21 @@
+.button{
+    button{
+        padding: 0.6rem 2rem;
+        border-radius: 2rem;
+        border: none;
+        outline: none;
+        font-size: 1.1rem;
+        background: var(--Cyan);
+        color: white;
+        font-weight: 700;
+        &:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+        @media (max-width: 500px){
+            padding: 0.4rem 1.5rem;
+            border-radius: 1.5rem;
+            font-size: 1rem;
+        }
+    }
+}

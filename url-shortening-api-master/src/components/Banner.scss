@@ -1,0 +1,31 @@
+.banner{
+    width: 100%;
+    height: 35vh;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/bg-boost-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Dark-Violet);
+    @media (max-width: 1091px){
+        text-align: center;
+    }
+    h2{
+        font-size: 2.2rem;
+        color: white;
+        margin-bottom: 1.5rem;
+        @media (max-width: 800px){
+            font-size: 2rem;
+        }
+        @media (max-width: 450px){
+            font-size: 1.6rem;
+        }
+    }
+    @media (max-width: 450px){
+        padding: 0 0.4rem;
+    }
+}
